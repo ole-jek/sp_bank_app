@@ -17,6 +17,7 @@ def mask_account_card(input_num: str) -> str:
     else:
         return f"{name} {get_mask_account(acc_num)}"
 
+
 def get_date(date_str: str) -> str:
     """Возвращает дату в формате ДД.ММ.ГГГГ"""
     return f"{date_str[8:10]}.{date_str[5:7]}.{date_str[:4]}"
