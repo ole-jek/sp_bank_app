@@ -7,11 +7,11 @@ def filter_by_state(id_list: list, state: str = "EXECUTED") -> list:
     return new_list
 
 
-def get_iem_date(item: dict) -> str:
+def get_item_date(item: dict) -> str:
     """Вспомогательная функция для нахождения даты из словаря и передачи в функцию sorted"""
-    return item["date"]
+    return str(item["date"])
 
 
 def sort_by_date(id_list: list, decreasing: bool = True) -> list:
     """Сортировка списка по датам"""
-    return sorted(id_list, key=get_iem_date, reverse=decreasing)
+    return sorted(id_list, key=get_item_date, reverse=decreasing)
