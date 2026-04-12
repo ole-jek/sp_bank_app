@@ -1,5 +1,6 @@
 import pytest
-from src.processing import filter_by_state, sort_by_date, get_item_date
+
+from src.processing import filter_by_state, get_item_date, sort_by_date
 
 
 @pytest.fixture
