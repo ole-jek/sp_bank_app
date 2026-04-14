@@ -12,7 +12,7 @@ def mask_account_card(input_num: str) -> str:
         else:
             acc_num += input_num[i]
     name = name.strip()
-    if name.lower() == "счет" or name.lower == "счёт":
+    if name.lower() == "счет" or name.lower() == "счёт":
         return f"{name} {get_mask_account(acc_num)}"
     else:
         return f"{name} {get_mask_card_number(acc_num)}"
